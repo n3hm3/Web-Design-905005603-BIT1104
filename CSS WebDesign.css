@@ -1,0 +1,40 @@
+
+/* 1. Font Setting */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+}
+
+/* 2. Active Navigation Link Styles */
+/* These rules use Tailwind's @apply directive to define a custom class for active state */
+.nav-link.active {
+    /* Sets the bottom border, color, and weight for the active link */
+    border-bottom: 4px solid #dc2626; /* border-red-600 */
+    font-weight: 700; /* font-bold */
+    color: #dc2626; /* text-red-600 */
+}
+
+/* 3. Dashboard Card Hover Effects */
+.dashboard-card {
+    /* Apply smooth transition for transform and shadow changes */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.dashboard-card:hover {
+    /* Lifts the card slightly on hover */
+    transform: translateY(-5px);
+    /* Adds a more pronounced shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Custom Table Styling */
+.table-custom th, .table-custom td {
+    padding: 12px 15px; /* Spacing */
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0; /* Border line */
+}
+.table-custom th {
+    background-color: #f8fafc; /* bg-gray-50 */
+    color: #1f2937; /* text-gray-800 */
+    font-weight: 600;
+}
